@@ -1,0 +1,71 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Georgia, 'Times New Roman', serif;
+
+  /* En jämn solnedgångsgradient som täcker hela höjden */
+  background: linear-gradient(to bottom, #fdd9a0 0%, #f8b86c 40%, #d98c4a 100%) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #3a2c1a;
+}
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #8b5e34;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-style: italic;
+}
+
+.content {
+  flex: 1;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.song-block {
+  background: #fff8e7;
+  border: 2px solid #8b5e34;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.song-block h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #5a3d23;
+}
+
+.song-block pre {
+  white-space: pre-wrap; /* radbrytning */
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  border-top: 4px solid #8b5e34;
+  background: #f3d8a6;
+}
